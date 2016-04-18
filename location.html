@@ -34,9 +34,9 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active" style="margin-top:0px"><a href="index.html"> HOME </a></li>
+            <li style="margin-top:0px"><a href="index.html"> HOME </a></li>
             <li style="margin-top:0px"><a href="#"> PRICES </a></li>
-            <li style="margin-top:0px"><a href="location.html"> LOCATION </a></li>
+            <li class="active" style="margin-top:0px"><a href="#"> LOCATION </a></li>
             <li style="margin-top:0px"><a href="#"> HOURS </a></li>
             <li style="margin-top:0px"><a href="#"> SNACKS </a></li>
             <li style="margin-top:0px"><a href="#"> CONTACT US </a></li>
@@ -46,20 +46,15 @@
     </div>
 
 	<div class="container w">
-		<div class="row col-sm-offset-3">
-			<p>
-				<strong> WEBSITE DEVELOPMENT IN PROGRESS </strong><br><br>
-				<strong> Phone: </strong> (613) 236-1356 <br>
-        		<strong> Location: </strong> 553 Gladstone Avenue, Ottawa, Ontario, K1R 6B1 <br>
-        	</p>
-        </div>
-        <div class="row centered">
-      		<img src="assets/img/front.png" style="width:660px;height:423px;">
-      		<br>
-      	</div>
+		<div class="row centered">
+      <p>
+        <strong> Location: </strong> 553 Gladstone Avenue, Ottawa, Ontario, K1R 6B1 <br>
+      </p>
+      <center>
+		  <div id="map_canvas" style="width:700px;height:500px;"></div>
+      </center>
     </div>
 		</div><!-- row -->
-		<br>
 		<br>
 	</div><!-- container -->
 
@@ -79,3 +74,49 @@
     <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
+
+<script>
+	    // variable definitions
+		var center, mapOptions, map, marker, infobubble;
+
+		// Initial position of the map
+		center = new google.maps.LatLng(45.4097140, -75.6996825);
+
+		function initialize() {
+		    // Map options
+		    mapOptions = {
+		        zoom: 18,
+		        center: center,
+		        mapTypeId: google.maps.MapTypeId.ROADMAP
+		    };
+
+		    // Attach the map to the document
+		    map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+		    // The marker details
+		    marker = new google.maps.Marker({
+		        position: new google.maps.LatLng(45.4097140, -75.6996825),
+		        map: map,
+		        title: 'marker7'
+		    });
+
+			// define infobubble options
+		    infobubble = new InfoBubble({
+		        maxWidth: 250,
+		        minWidth: 250,
+		        maxHeight: 100,
+		        minHeight: 100,
+		        backgroundColor: 'rgba(65,65,65,0.7)',
+		        disableAnimation: true,
+		        content: '<div><a class="dialog" href="https://maps.google.com/" target="_blank"></a></div>',
+		    });
+
+		    google.maps.event.addListener(marker, 'click', function () {
+		        infobubble.open(map, marker);
+		        google.maps.event.addListener(infobubble, 'domready', function () {
+					$(".dialog").html('<img id="theImg" src="https://goo.gl/phmzis" />');
+		        });
+		    });
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
