@@ -1,2 +1,2 @@
 # http://majesticcleaners.github.io/
-553 Gladstone Avnue, Ottawa, Ontario
+553 Gladstone Avenue, Ottawa, Ontario
