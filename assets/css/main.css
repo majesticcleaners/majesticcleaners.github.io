@@ -289,3 +289,22 @@ a:after {
     width: 100% !important;
     height: 100% !important;
 }
+
+.theBox {
+  border: 2px solid black;
+  padding-left: 10px;
+  width: 50%;
+}
+
+#CanadaDay {
+  width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .theBox {
+    width: 100%!important;
+  }
+  #CanadaDay {
+    width: 100%!important;
+  }
+}
