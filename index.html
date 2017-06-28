@@ -1,134 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+<html ng-app="theApp">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Majestic Cleaners &amp; Laundry </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Majestic Cleaners & Laundry, 553 Gladstone Avenue, Ottawa, Ontario">
-    <meta name="author" content="Ricky Dam">
-    <link rel="shortcut icon" href="assets/img/icon.png">
+    <script src="assets/imports/js/angular.js"></script>
+    <script src="assets/imports/js/angular-ui-router.js"></script>
+    <script src="controllers/stateController.js"></script>
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/imports/css/SourceSansPro.css">
 
-    <title> Majestic Cleaners & Laundry (Gladstone, Ottawa) </title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
   </head>
 
-  <body>
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <td id="logo"><span class='wsite-logo' style="margin-left: 15px"><a href='/'><img src='assets/img/logo.jpg' style="width:240px; height:49px"/></a></span></td>
+  <body ng-controller="stateController">
+    <div class="mainContainer" align="center">
+
+      <div class="imgContainer">
+        <img src="assets/images/logo.jpg" alt="Majestic Cleaners logo" id="logo">
+      </div>
+
+      <font face="Source Sans Pro" size="4">
+        <div class="customNavbar">
+          <div class="nav_item">
+            <a ui-sref="home" ui-sref-active="active"> Home </a>
+          </div><!--
+          --><div class="nav_item">
+            <a ui-sref="prices" ui-sref-active="active"> Prices </a>
+          </div><!--
+          --><div class="nav_item">
+            <a ui-sref="hours" ui-sref-active="active"> Hours </a>
+          </div><!--
+          --><div class="nav_item">
+            <a ui-sref="location" ui-sref-active="active"> Location </a>
+          </div><!--
+          --><div class="nav_item">
+            <a ui-sref="snacks" ui-sref-active="active"> Snacks </a>
+          </div>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active" style="margin-top:0px"><a href="index.html"> HOME </a></li>
-            <li style="margin-top:0px"><a href="prices.html"> PRICES </a></li>
-            <li style="margin-top:0px"><a href="hours.html"> HOURS </a></li>
-            <li style="margin-top:0px"><a href="snacks.html"> SNACKS </a></li>
-            <li style="margin-top:0px"><a href="location.html"> LOCATION </a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+
+        <ui-view></ui-view>
+
+        <hr class="theLine">
+
+        <div class="footer">
+          <span>
+            Information updated: June 28, 2017 <br>
+            Copyright © 2017 |
+            Website by <a href="http://rickydam.com/" target="_blank"> Ricky Dam </a>
+          </span>
+        </div>
+
+      </font>
     </div>
-
-    <hr>
-
-  	<div class="container w" style="margin-top:-30px">
-
-      <h2><strong> Canada Day Holiday Hours </strong></h2>
-      <br>
-      <div class="theBox">
-        <h3><strong> (Canada Day) </strong></h3>
-        <h3><strong> Saturday, July 1, 2017 </strong></h3>
-        <h3 style="color:red"><strong> CLOSED </strong></h3>
-      </div>
-
-      <br>
-
-      <div class="theBox">
-        <h3><strong> Sunday, July 2, 2017 </strong></h3>
-        <h3><strong> 8:00am - 7:00pm </strong></h3>
-        <h3><strong> (Last Wash: 5:30pm) </strong></h3>
-      </div>
-
-      <br>
-
-      <div class="theBox">
-        <h3><strong> Monday, July 3, 2017  </strong></h3>
-        <h3><strong> 9:00am - 7:00pm </strong></h3>
-        <h3><strong> (Last Wash: 5:30pm) </strong></h3>
-      </div>
-
-      <br>
-
-      <img src="assets/img/canada-day.png" alt="Canada Day Image" id="CanadaDay">
-
-      <br><br>
-
-    </div>
-
-    <hr>
-
-    <div class="container w" style="margin-top:-30px">
-      <strong>
-        Bill and coin change available at the counter. <br><br>
-
-        <u> Parking </u> : Private parking lot and 3 hour Bay street parking <br><br>
-
-        <u> Phone </u> : (613) 236-1356 <br>
-        <u> Location </u> : 553 Gladstone Avenue, Ottawa, Ontario, K1R 5P2 <br>
-      </strong>
-    </div>
-
-    <hr>
-
-    <div class="container" style="width:auto!important">
-      <img src="assets/img/front1.jpg" style="width:100%;height:100%;"> <br><br>
-      <img src="assets/img/front2.jpg" style="width:100%;height:100%;"> <br><br>
-      <img src="assets/img/inside1.jpg" style="width:100%;height:100%;"> <br><br>
-      <img src="assets/img/inside2.jpg" style="width:100%;height:100%;"> <br><br>
-      <img src="assets/img/tables1.jpg" style="width:100%;height:100%;"> <br><br>
-      <img src="assets/img/tables2.jpg" style="width:100%;height:100%;"> <br><br>
-      <img src="assets/img/main.png" style="width:100%;height:100%;"> <br>
-    </div>
-
-    <hr>
-
-    <div class="container w" style="margin-top: -30px;">
-      <strong>
-        Information updated : June 19, 2017 <br>
-        Copyright © 2017 <br>
-        Website created and maintained by
-        <a href="http://rickydam.github.io/">
-          Ricky Dam <span class="fa fa-external-link fa-1x"></span>
-        </a>
-      </strong><br>
-
-      <!-- hitwebcounter Code START -->
-      <a href="http://www.hitwebcounter.com" target="_blank">
-        <img src="http://hitwebcounter.com/counter/counter.php?page=6389899&style=0006&nbdigits=4&type=page&initCount=0" title="" Alt="" border="0" >
-      </a><br>
-      <!-- hitwebcounter.com -->
-      <a href="http://www.hitwebcounter.com" target="_blank" style="font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 9px; color: #908C86; text-decoration: underline;"></a>
-    </div><!-- container -->
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
