@@ -66,7 +66,7 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 5px;
-  width: 160px;
+  width: 180px;
   height: 30px;
 }
 
@@ -146,9 +146,9 @@
 }
 
 .snacksContainer {
-  width: 225px;
+  width: 240px;
   text-align: right;
-  margin-right: 25px;
+  margin-right: 35px;
 }
 
 .drycleaningContainer {
@@ -233,32 +233,18 @@ h1 + .hst {
   margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 600px) {
-  .customNavbar {
-    width: 100%;
-  }
-  .nav_item {
-    width: 20%;
-  }
-  #map {
-    width: 100%;
-  }
-  .homePage img {
-    width: 100%;
-    margin: 5px 0px;
-    padding: 0px;
-  }
-  .itemsContainer {
-    margin-left: 0px;
-  }
-  .coinwashContainer {
-    margin-right: 100px;
-  }
-  .coinwash_h3 {
-    margin-bottom: 0px;
-    position: relative;
-    margin-left: 0px;
-    text-align: center;
+.variablebreak {
+  display: none;
+}
+
+#map {
+  width: 70%;
+  height: 550px;
+}
+
+@media only screen and (max-width: 680px) {
+  .theRow .element {
+    display: block;
   }
   .element {
     border-left: 1px solid black;
@@ -281,5 +267,35 @@ h1 + .hst {
   }
   .theRow .element:first-child {
     border-top: 1px solid black;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .customNavbar {
+    width: 100%;
+  }
+  .nav_item {
+    width: 20%;
+  }
+  .homePage img {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 0px;
+  }
+  .itemsContainer {
+    margin-left: 0px;
+  }
+  .coinwashContainer {
+    margin-right: 100px;
+  }
+  .coinwash_h3 {
+    margin-bottom: 0px;
+    position: relative;
+    margin-left: 0px;
+    text-align: center;
+  }
+  #map {
+    width: 90%;
+    height: 400px;
   }
 }
