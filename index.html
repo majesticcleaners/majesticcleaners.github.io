@@ -10,47 +10,27 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/imports/css/SourceSansPro.css">
     <link rel="shortcut icon" href="#" />
+    <font face="Source Sans Pro" size="4">
   </head>
 
   <body ng-controller="stateController">
     <div class="mainContainer" align="center">
 
+      <div class="customNavbar">
+        <div class="nav_item">
+          <a ui-sref="english" ui-sref-active="active"> English </a>
+        </div><!--
+        --><div class="nav_item">
+          <a ui-sref="french" ui-sref-active="active"> Francais </a>
+        </div>
+      </div>
+
       <div class="imgContainer">
         <img src="assets/images/logo.jpg" alt="Majestic Cleaners logo" id="logo">
       </div>
+      
+      <ui-view></ui-view>
 
-      <font face="Source Sans Pro" size="4">
-        <div class="customNavbar">
-          <div class="nav_item">
-            <a ui-sref="home" ui-sref-active="active"> Home </a>
-          </div><!--
-          --><div class="nav_item">
-            <a ui-sref="prices" ui-sref-active="active"> Prices </a>
-          </div><!--
-          --><div class="nav_item">
-            <a ui-sref="hours" ui-sref-active="active"> Hours </a>
-          </div><!--
-          --><div class="nav_item">
-            <a ui-sref="location" ui-sref-active="active"> Location </a>
-          </div><!--
-          --><div class="nav_item">
-            <a ui-sref="snacks" ui-sref-active="active"> Snacks </a>
-          </div>
-        </div>
-
-        <ui-view></ui-view>
-
-        <hr class="theLine">
-
-        <div class="footer">
-          <span>
-            Information updated: July 4, 2017 <br>
-            Copyright © 2017 |
-            Website by <a href="https://rickydam.com/" target="_blank"> Ricky Dam </a>
-          </span>
-        </div>
-
-      </font>
     </div>
   </body>
 </html>

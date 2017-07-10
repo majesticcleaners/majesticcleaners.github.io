@@ -20,6 +20,8 @@ console.log("App running on localhost:3000");
 // currentSession.watch('controllers/*.js', currentSession.reload);
 // console.log("Watching JS controllers...");
 // currentSession.watch('views/*.html', currentSession.reload);
+// currentSession.watch('views/english/*.html', currentSession.reload);
+// currentSession.watch('views/french/*.html', currentSession.reload);
 // console.log("Watching HTML views...");
 // currentSession.watch('assets/css/custom.css').on('change', currentSession.reload);
 // console.log("Watching custom.css...");
