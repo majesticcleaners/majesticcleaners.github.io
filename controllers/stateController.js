@@ -10,32 +10,35 @@ app.controller('stateController', function($scope, $state) {
     if(oldValue === 'english.home' && newValue === 'french') {
       $state.go('french.home');
     }
-    if(oldValue === 'french.home' && newValue === 'english') {
+    else if(oldValue === 'french.home' && newValue === 'english') {
       $state.go('english.home');
     }
-    if(oldValue === 'english.prices' && newValue === 'french') {
+    else if(oldValue === 'english.prices' && newValue === 'french') {
       $state.go('french.prices');
     }
-    if(oldValue === 'french.prices' && newValue === 'english') {
+    else if(oldValue === 'french.prices' && newValue === 'english') {
       $state.go('english.prices');
     }
-    if(oldValue === 'english.hours' && newValue === 'french') {
+    else if(oldValue === 'english.hours' && newValue === 'french') {
       $state.go('french.hours');
     }
-    if(oldValue === 'french.hours' && newValue === 'english') {
+    else if(oldValue === 'french.hours' && newValue === 'english') {
       $state.go('english.hours');
     }
-    if(oldValue === 'english.location' && newValue === 'french') {
+    else if(oldValue === 'english.location' && newValue === 'french') {
       $state.go('french.location');
     }
-    if(oldValue === 'french.location' && newValue === 'english') {
+    else if(oldValue === 'french.location' && newValue === 'english') {
       $state.go('english.location');
     }
-    if(oldValue === 'english.snacks' && newValue === 'french') {
+    else if(oldValue === 'english.snacks' && newValue === 'french') {
       $state.go('french.snacks');
     }
-    if(oldValue === 'french.snacks' && newValue === 'english') {
+    else if(oldValue === 'french.snacks' && newValue === 'english') {
       $state.go('english.snacks');
+    }
+    else {
+      // do nothing
     }
   }
 
