@@ -10,41 +10,68 @@ app.controller('stateController', function($scope, $state) {
     if(oldValue === 'english.home' && newValue === 'french') {
       $state.go('french.home');
     }
-    else if(oldValue === 'french.home' && newValue === 'english') {
+    if(oldValue === 'french.home' && newValue === 'english') {
       $state.go('english.home');
     }
-    else if(oldValue === 'english.prices' && newValue === 'french') {
+    if(oldValue === 'english.prices' && newValue === 'french') {
       $state.go('french.prices');
     }
-    else if(oldValue === 'french.prices' && newValue === 'english') {
+    if(oldValue === 'french.prices' && newValue === 'english') {
       $state.go('english.prices');
     }
-    else if(oldValue === 'english.hours' && newValue === 'french') {
+    if(oldValue === 'english.hours' && newValue === 'french') {
       $state.go('french.hours');
     }
-    else if(oldValue === 'french.hours' && newValue === 'english') {
+    if(oldValue === 'french.hours' && newValue === 'english') {
       $state.go('english.hours');
     }
-    else if(oldValue === 'english.location' && newValue === 'french') {
+    if(oldValue === 'english.location' && newValue === 'french') {
       $state.go('french.location');
     }
-    else if(oldValue === 'french.location' && newValue === 'english') {
+    if(oldValue === 'french.location' && newValue === 'english') {
       $state.go('english.location');
     }
-    else if(oldValue === 'english.snacks' && newValue === 'french') {
+    if(oldValue === 'english.snacks' && newValue === 'french') {
       $state.go('french.snacks');
     }
-    else if(oldValue === 'french.snacks' && newValue === 'english') {
+    if(oldValue === 'french.snacks' && newValue === 'english') {
       $state.go('english.snacks');
     }
-    else if(oldValue === 'english' && newValue === 'english') {
-      // do nothing
+
+
+
+    if(oldValue === 'english.home' && newValue === 'english') {
+      $state.go('english.home');
     }
-    else if(oldValue === 'french' && newValue === 'french') {
-      // do nothing
+    if(oldValue === 'english.prices' && newValue === 'english') {
+      $state.go('english.prices');
     }
-    else {
-      // do nothing
+    if(oldValue === 'english.hours' && newValue === 'english') {
+      $state.go('english.hours');
+    }
+    if(oldValue === 'english.location' && newValue === 'english') {
+      $state.go('english.location');
+    }
+    if(oldValue === 'english.snacks' && newValue === 'english') {
+      $state.go('english.snacks');
+    }
+
+
+
+    if(oldValue === 'french.home' && newValue === 'french') {
+      $state.go('french.home');
+    }
+    if(oldValue === 'french.prices' && newValue === 'french') {
+      $state.go('french.prices');
+    }
+    if(oldValue === 'french.hours' && newValue === 'french') {
+      $state.go('french.hours');
+    }
+    if(oldValue === 'french.location' && newValue === 'french') {
+      $state.go('french.location');
+    }
+    if(oldValue === 'french.snacks' && newValue === 'french') {
+      $state.go('french.snacks');
     }
   }
 
