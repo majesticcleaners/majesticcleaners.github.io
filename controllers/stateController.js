@@ -37,6 +37,12 @@ app.controller('stateController', function($scope, $state) {
     else if(oldValue === 'french.snacks' && newValue === 'english') {
       $state.go('english.snacks');
     }
+    else if(oldValue === 'english' && newValue === 'english') {
+      // do nothing
+    }
+    else if(oldValue === 'french' && newValue === 'french') {
+      // do nothing
+    }
     else {
       // do nothing
     }
@@ -55,13 +61,11 @@ app.config(function($stateProvider) {
     // Languages
     .state('english', {
       url: '/en',
-      templateUrl: 'views/english.html',
-      abstract: true
+      templateUrl: 'views/english.html'
     })
     .state('french', {
       url: '/fr',
-      templateUrl: 'views/french.html',
-      abstract: true
+      templateUrl: 'views/french.html'
     })
 
     // English
