@@ -55,11 +55,11 @@ app.config(function($stateProvider) {
     // Languages
     .state('english', {
       url: '/en',
-      templateUrl: 'views/english.html',
+      abstract: true
     })
     .state('french', {
       url: '/fr',
-      templateUrl: 'views/french.html',
+      abstract: true
     })
 
     // English
