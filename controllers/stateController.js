@@ -94,6 +94,10 @@ app.config(function($stateProvider) {
       url: '/fr',
       templateUrl: 'views/french.html'
     })
+    // .state('chinese', {
+    //   url: '/ch',
+    //   templateUrl: 'views/chinese.html'
+    // })
 
     // English
     .state('english.home', {
