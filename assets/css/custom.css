@@ -84,11 +84,6 @@
   font-weight: bold;
 }
 
-#canada_day {
-  width: 350px;
-  max-width: 100%;
-}
-
 .theLine {
   width: 600px;
   margin: 20px 0px;
@@ -246,6 +241,11 @@ h1 + .hst {
   width: 20%;
 }
 
+td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
 @media only screen and (max-width: 700px) {
   #homeFR_item {
     width: 70px;
@@ -261,6 +261,31 @@ h1 + .hst {
   }
   #snacksFR_item {
     width: 150px;
+  }
+  .theRow .element {
+    display: block;
+  }
+  .element {
+    border-left: 1px solid black;
+    border-bottom: 1px solid lightgray;
+  }
+  .theRow .element:last-child {
+    border-bottom: 1px solid black;
+  }
+  .blank {
+    border: 0px;
+    color: white;
+    border-bottom: 1px solid white !important;
+    margin-bottom: -50px;
+  }
+  .closed {
+    border-bottom: 1px solid black !important;
+  }
+  .theRow .element {
+    border-top: 0px;
+  }
+  .theRow .element:first-child {
+    border-top: 1px solid black;
   }
 }
 
