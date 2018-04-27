@@ -246,6 +246,14 @@ td {
   width: 700px;
 }
 
+.announcement {
+  font-size: 20pt;
+}
+
+.announcementMsg {
+  font-size: 15pt;
+}
+
 @media only screen and (max-width: 860px) {
   #homeFR_item {
     width: 70px;
