@@ -1,0 +1,38 @@
+<html ng-app="theApp">
+  <head>
+    <title> Majestic Cleaners &amp; Laundry (Gladstone Avenue) (Ottawa) </title>
+    <meta name="description" content="Laundry in Downtown Ottawa offering drop off wash and fold, repairs and alterations, dry cleaning and self-service laundry (coin wash).">
+    <meta name="author" content="Ricky Dam">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/imports/css/SourceSansPro.css">
+    <link rel="shortcut icon" href="#" />
+    <font face="Source Sans Pro" size="4">
+  </head>
+
+  <body ng-controller="stateController">
+    <div class="mainContainer" align="center">
+
+      <div class="customNavbar">
+        <div class="nav_item">
+          <a ui-sref="english" ui-sref-active="active"> English </a>
+        </div><!--
+        --><div class="nav_item">
+          <a ui-sref="french" ui-sref-active="active"> Français </a>
+        </div>
+      </div>
+
+      <div class="imgContainer">
+        <img src="assets/images/logo.jpg" alt="Majestic Cleaners logo" id="logo">
+      </div>
+
+      <ui-view></ui-view>
+
+    </div>
+  </body>
+  <footer>
+    <script src="assets/imports/js/angular.js"></script>
+    <script src="assets/imports/js/angular-ui-router.js"></script>
+    <script src="controllers/stateController.js"></script>
+  </footer>
+</html>

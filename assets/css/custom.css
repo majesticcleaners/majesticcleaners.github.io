@@ -1,0 +1,356 @@
+#logo {
+  width: 450px;
+  max-width: 100%;
+}
+
+.imgContainer {
+  margin-bottom: 20px;
+}
+
+.mainContainer {
+  width: 100%;
+}
+
+.customNavbar {
+  width: 800px;
+  max-width: 100%;
+  height: 30px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.nav_item {
+  display: inline-block;
+  background-color: white;
+  width: 15%;
+}
+
+.nav_item > a {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  display: block;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.nav_item > a:hover {
+  background-color: lightgray;
+}
+
+.nav_item > a:focus {
+  outline: none;
+}
+
+.active {
+  background-color: lightgray;
+}
+
+.theContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.theRow {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.element {
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  width: 235px;
+  height: 30px;
+}
+
+.theRow .element:first-child {
+  border-left: 1px solid black;
+}
+
+.blank {
+  border: 0px;
+  color: white;
+}
+
+.closed {
+  color: red;
+  font-weight: bold;
+}
+
+.theLine {
+  width: 600px;
+  margin: 20px 0px;
+  border: 1px solid lightgray;
+  max-width: 100%;
+}
+
+.homePage img {
+  width: 45%;
+  display: inline-block;
+  padding: 5px;
+}
+
+.footer {
+  color: gray;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  background-color: lightgray;
+}
+
+.footer a:focus {
+  outline: none;
+}
+
+.hoursContainer {
+  width: 300px;
+  text-align: right;
+  margin-right: 60px;
+}
+
+.titleline {
+  border: 1px solid lightgray;
+  width: 200px;
+  margin-top: -25px;
+}
+
+.titleline_special {
+  border: 1px solid lightgray;
+  width: 300px;
+  margin-top: -25px;
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+
+.snackshr {
+  border: 1px solid lightgray;
+  width: 300px;
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+.snacksContainer {
+  width: 240px;
+  text-align: right;
+  margin-right: 35px;
+}
+
+.drycleaningContainer {
+  width: 250px;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.coinwashContainer {
+  width: 500px;
+  text-align: right;
+  margin-right: 150px;
+  max-width: 100%;
+}
+
+.money {
+  color: #2E8B57;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.blue {
+  color: #0099CC;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.priceshr {
+  border: 1px solid lightgray;
+  margin-top: 20px;
+  width: 300px;
+}
+
+.hst {
+  margin-top: -20px!important;
+}
+
+.itemsContainer {
+  margin-left: 70px;
+  margin-top: -30px;
+}
+
+.itemsContainer .item {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+#bounce {
+  width: 200px;
+  margin-top: -15px;
+}
+
+#detergent {
+  width: 145px;
+  margin-top: -15px;
+}
+
+#pods {
+  width: 205px;
+  margin-top: -15px;
+}
+
+#ultra {
+  width: 190px;
+  margin-top: -15px;
+}
+
+#original {
+  width: 90px;
+  margin-top: -15px;
+}
+
+.coinwash_h3 {
+  margin-bottom: 0px;
+  position: relative;
+  margin-left: 150px;
+  text-align: center;
+}
+
+h1 + .hst {
+  margin-top: -30px!important;
+  margin-bottom: 30px;
+}
+
+#map {
+  width: 70%;
+  height: 550px;
+}
+
+#snacksFR_item {
+  width: 150px;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#holidayimage {
+  width: 700px;
+}
+
+.announcement {
+  font-size: 20pt;
+}
+
+.announcementMsg {
+  font-size: 15pt;
+}
+
+@media only screen and (max-width: 860px) {
+  #homeFR_item {
+    width: 70px;
+  }
+  #pricesFR_item {
+    width: 70px;
+  }
+  #hoursFR_item {
+    width: 70px;
+  }
+  #locationFR_item {
+    width: 80px;
+  }
+  #snacksFR_item {
+    width: 150px;
+  }
+  .theRow .element {
+    display: block;
+  }
+  .element {
+    border-left: 1px solid black;
+    border-bottom: 1px solid lightgray;
+  }
+  .theRow .element:last-child {
+    border-bottom: 1px solid black;
+  }
+  .blank {
+    border: 0px;
+    color: white;
+    border-bottom: 1px solid white !important;
+    margin-bottom: -50px;
+  }
+  .theRow .element {
+    border-top: 0px;
+  }
+  .theRow .element:first-child {
+    border-top: 1px solid black;
+  }
+  #holidayimage {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .customNavbar {
+    width: 100%;
+  }
+  .nav_item {
+    width: 20%;
+  }
+  .homePage img {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 0px;
+  }
+  .itemsContainer {
+    margin-left: 0px;
+  }
+  .coinwashContainer {
+    margin-right: 100px;
+  }
+  .coinwash_h3 {
+    margin-bottom: 0px;
+    position: relative;
+    margin-left: 0px;
+    text-align: center;
+  }
+  #map {
+    width: 90%;
+    height: 400px;
+  }
+  #holidayimage {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #homeFR_item > a,
+  #pricesFR_item > a,
+  #hoursFR_item > a,
+  #locationFR_item > a,
+  #snacksFR_item > a {
+    font-size: 15px;
+  }
+  #homeFR_item {
+    width: 50px;
+  }
+  #pricesFR_item {
+    width: 50px;
+  }
+  #hoursFR_item {
+    width: 50px;
+  }
+  #locationFR_item {
+    width: 60px;
+  }
+  #snacksFR_item {
+    width: 120px;
+  }
+}
